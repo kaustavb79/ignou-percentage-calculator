@@ -1,14 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.firefox.options import Options
-import course_dict as cd
+import json
 
 class IgnouPercentage:
-
-    # __student_details = []
-    # __data_frame = {}
-    # __extracted_frame = {}
-
     def __init__(self):
         #Disabling the browser window to open
         option = Options()
@@ -104,7 +99,7 @@ class IgnouPercentage:
          
     #calculate percentage and status of each course
     def __calculateResult(self):
-        for key,val in cd.BCA_SYLLABUS.items():
+        for key,val in json.load(open("course_dictionary.json")).items():
             dct = {}
             for k,v in val.items():
                 try:

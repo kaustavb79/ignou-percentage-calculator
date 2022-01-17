@@ -94,6 +94,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+Pipfile
+Pipfile.lock
 
 # Spyder project settings
 .spyderproject
@@ -112,3 +114,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+Procfile.txt
+setup.sh
+.ipynb
+.log
