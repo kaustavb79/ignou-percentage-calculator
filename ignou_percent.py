@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import time
 from read_percentage import IgnouPercentage as IP
 
 st.set_page_config(page_title="IGNOU BCA/MCA CALCULATOR", page_icon=None, layout='wide', initial_sidebar_state='auto')
