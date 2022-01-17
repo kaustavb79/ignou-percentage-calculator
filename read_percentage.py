@@ -6,9 +6,10 @@ import json
 class IgnouPercentage:
     def __init__(self):
         #Disabling the browser window to open
+        config = json.load(open("config.json"))
         option = Options()
-        option.headless = True
-        self.driver = webdriver.Firefox(options=option)
+        option.headless = bool(config["headless"])
+        self.driver = webdriver.Firefox(options=option,executable_path=config["executable_path"])
 
         # Default siter url
         self.driver.get("https://gradecard.ignou.ac.in/gradecardM/Result.asp")
