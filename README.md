@@ -5,6 +5,7 @@
 # Requirements
  - Python 3.7 or above
  - Geckodriver(for Firefox browser) or install browser specific selenium driver on your system.
+ - Sepcify the default browser in the __config.json__ file as well.
  - Set the path in the __config.json__ file under __executable_path__ key.
 
 # Installation
