@@ -1,5 +1,16 @@
 {
     "headless":"True",
-    "executable_path":"J:\\JAR Files\\selenium\\geckodriver.exe",
-	"default_browser":"Firefox"
+	"default_browser":"Chrome",
+    "os":"linux",
+    "system_arch":"64",
+    "linux_path":{
+        "chrome_64_bit":"./web_drivers/chrome/64/linux/chromedriver",
+        "firefox_64_bit":"./web_drivers/firefox/64/linux/geckodriver",
+        "firefox_32_bit":"./web_drivers/firefox/32/linux/geckodriver"
+    },
+    "windows_path":{
+        "firefox_64_bit":"./web_drivers/firefox/64/windows/geckodriver.exe",
+        "firefox_32_bit":"./web_drivers/firefox/32/windows/geckodriver.exe",
+        "chrome_32_bit":"./web_drivers/chrome/32/windows/chromedriver.exe"
+    }
 }

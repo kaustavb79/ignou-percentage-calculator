@@ -4,9 +4,7 @@
 
 # Requirements
  - Python 3.7 or above
- - Geckodriver(for Firefox browser) or install browser specific selenium driver on your system.
- - Sepcify the default browser in the __config.json__ file as well.
- - Set the path in the __config.json__ file under __executable_path__ key.
+ - Sepcify the __default_browser__ , __os__ type and the __system architecture__ in the __config.json__ file.
 
 # Installation
 - Create a virtual environment in Python using __pipenv__ or __virtualenv__.

@@ -1,15 +1,35 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.options import Options as firefox_opts
+from selenium.webdriver.chrome.options import Options as chrome_opts
 import json
 
 class IgnouPercentage:
     def __init__(self):
         #Disabling the browser window to open
         config = json.load(open("config.json"))
-        option = Options()
-        option.headless = bool(config["headless"])
-        self.driver = webdriver.Firefox(options=option,executable_path=config["executable_path"])
+        head_less = bool(config["headless"])
+        firefox_option = firefox_opts()
+        firefox_option.headless = head_less
+        if head_less:
+            chrome_option = chrome_opts()
+            chrome_option.add_argument("--headless") 
+        if config["os"] == "windows":
+            if config["default_browser"] == "Firefox":                
+                if config["system_arch"] == "64":
+                    self.driver = webdriver.Firefox(options=firefox_option,executable_path=config["windows_path"]["firefox_64_bit"])
+                else:
+                    self.driver = webdriver.Firefox(options=firefox_option,executable_path=config["windows_path"]["firefox_32_bit"])
+            elif config["default_browser"] == "Chrome":
+                self.driver = webdriver.Chrome(chrome_options=chrome_option,executable_path=config["windows_path"]["chrome_32_bit"])
+        if config["os"] == "linux":
+            if config["default_browser"] == "Firefox":
+                if config["system_arch"] == "64":
+                    self.driver = webdriver.Firefox(options=firefox_option,executable_path=config["linux_path"]["firefox_64_bit"])
+                else:
+                    self.driver = webdriver.Firefox(options=firefox_option,executable_path=config["linux_path"]["firefox_32_bit"])
+            elif config["default_browser"] == "Chrome":
+                self.driver = webdriver.Chrome(chrome_options=chrome_option,executable_path=config["linux_path"]["chrome_64_bit"])
 
         # Default siter url
         self.driver.get("https://gradecard.ignou.ac.in/gradecardM/Result.asp")
