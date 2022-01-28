@@ -1,6 +1,6 @@
 {
     "headless":"True",
-	"default_browser":"Chrome",
+	"default_browser":"Firefox",
     "os":"linux",
     "system_arch":"64",
     "linux_path":{
