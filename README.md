@@ -2,7 +2,7 @@
  This app is used to calculate the __culmulative__ as well as __semester-wise__ percentage of IGNOU students pursuing BCA/MCA(Revised).
 
 # Hosted URL:
-    __https://share.streamlit.io/kaustavb79/ignou-percentage-calculator/main/ignou_percent.py__
+    https://share.streamlit.io/kaustavb79/ignou-percentage-calculator/main/ignou_percent.py
 
 # __Local Machine Installation__
 ## Requirements
