@@ -7,7 +7,6 @@ st.set_page_config(page_title="IGNOU BCA/MCA CALCULATOR", page_icon=None, layout
 st.title('IGNOU BCA/MCA CALCULATOR')
 
 st.markdown("Calculate your BCA/MCA semester-wise/total percentage and grade...")
-st_disqus("ignou-1.disqus.com")
 # roll_no = st.text_input("Enter Enrollment No. :")
 # option = st.selectbox("Choose Program :",('BCA','MCA'))
 with st.sidebar.form(key='my_form'):
@@ -82,4 +81,4 @@ if submit_button:
         st.markdown('**Total Credits** = *'+str(credits)+'*')
         st.markdown("***Marks for Project in assignment***")
 
-st_disqus("ignou-1.disqus.com")
+st_disqus("ignou-1")
