@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from read_percentage import IgnouPercentage as IP
-from streamlit_discourse import st_discourse
+from streamlit_disqus import st_disqus
 
 st.set_page_config(page_title="IGNOU BCA/MCA CALCULATOR", page_icon=None, layout='wide', initial_sidebar_state='auto')
 st.title('IGNOU BCA/MCA CALCULATOR')
@@ -81,4 +81,4 @@ if submit_button:
         st.markdown('**Total Credits** = *'+str(credits)+'*')
         st.markdown("***Marks for Project in assignment***")
 
-st_discourse("discuss.streamlit.io", 8061)
+st_disqus("streamlit-disqus-demo")
