@@ -74,43 +74,70 @@ class IgnouPercentage:
         lab = []
         viva = []
         term_end = []
+        symbol = ["-","#"]
 
-        #course list
-        for code in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[1]/strong'):
-            courses.append(code.get_attribute('textContent'))
+        # #course list
+        # for code in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[1]/strong'):
+        #     courses.append(code.get_attribute('textContent'))
                 
-        # assignment
-        for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[2]/strong'):
-            mark = x.get_attribute("textContent")
-            if mark == '-':
-                assignment.append(0)
-                continue
-            assignment.append(int(mark))
+        # # assignment
+        # for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[2]/strong'):
+        #     mark = x.get_attribute("textContent")
+        #     if mark in symbol:
+        #         assignment.append(0)
+        #         continue
+        #     assignment.append(int(mark))
 
-        #lab
-        for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[3]/strong'):
-            mark = x.get_attribute("textContent")
-            if mark == '-':
-                lab.append(0)
-                continue
-            lab.append(int(mark))
+        # #lab
+        # for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[3]/strong'):
+        #     mark = x.get_attribute("textContent")
+        #     if mark in symbol:
+        #         lab.append(0)
+        #         continue
+        #     lab.append(int(mark))
         
-        #viva
-        for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[4]/strong'):
-            mark = x.get_attribute("textContent")
-            if mark == '-':
-                viva.append(0)
-                continue
-            viva.append(int(mark))
+        # #viva
+        # for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[4]/strong'):
+        #     mark = x.get_attribute("textContent")
+        #     if mark in symbol:
+        #         viva.append(0)
+        #         continue
+        #     viva.append(int(mark))
         
-        #term end
-        for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[7]/strong'):
-            mark = x.get_attribute("textContent")
-            if mark == '-':
-                term_end.append(0)
-                continue
-            term_end.append(int(mark))
+        # #term end
+        # for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[7]/strong'):
+        #     mark = x.get_attribute("textContent")
+        #     if mark in symbol:
+        #         term_end.append(0)
+        #         continue
+        #     term_end.append(int(mark))
 
+        tag_list = [1,2,3,4,7]
+        for index in range(len(tag_list)):
+            for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[{}]/strong'.format(tag_list[index])):
+                mark = x.get_attribute("textContent")
+                if tag_list[index] == 1:
+                    courses.append(code.get_attribute('textContent'))
+                elif tag_list[index] == 2: 
+                    if mark in symbol:
+                        assignment.append(0)
+                        continue
+                    assignment.append(int(mark))
+                elif tag_list[index] == 3: 
+                    if mark in symbol:
+                        lab.append(0)
+                        continue
+                    lab.append(int(mark))
+                elif tag_list[index] == 4:
+                    if mark in symbol:
+                        viva.append(0)
+                        continue
+                    viva.append(int(mark))                
+                elif tag_list[index] == 7:
+                    if mark in symbol:
+                        term_end.append(0)
+                        continue
+                    term_end.append(int(mark))
         
         #store the results in the list
         [
