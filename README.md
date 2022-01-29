@@ -21,3 +21,6 @@
 - https://github.com/okld/streamlit-disqus
 - https://streamlit.io/
 - https://www.selenium.dev/
+- https://discuss.streamlit.io/t/discourse-integration/8061
+- https://discuss.streamlit.io/t/disqus-integration/3170/10 
+- https://docs.streamlit.io/library/components/components-api
