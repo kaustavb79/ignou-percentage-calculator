@@ -81,4 +81,4 @@ if submit_button:
         st.markdown('**Total Credits** = *'+str(credits)+'*')
         st.markdown("***Marks for Project in assignment***")
 
-st_disqus("streamlit-disqus-demo")
+st_disqus("ignou-1.disqus.com")
