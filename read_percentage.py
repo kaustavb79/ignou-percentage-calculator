@@ -117,7 +117,7 @@ class IgnouPercentage:
             for x in self.driver.find_elements_by_xpath('/html/body/form/p[1]/table/tbody/tr/td[{}]/strong'.format(tag_list[index])):
                 mark = x.get_attribute("textContent")
                 if tag_list[index] == 1:
-                    courses.append(code.get_attribute('textContent'))
+                    courses.append(x.get_attribute('textContent'))
                 elif tag_list[index] == 2: 
                     if mark in symbol:
                         assignment.append(0)
