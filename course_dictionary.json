@@ -1,5 +1,5 @@
 {
-     "BCA":{
+     "BCA": {
           "SEMESTER 1": {
                "FEG02": {
                     "SUBJECT_NAME": "Foundation Course in English-2",
@@ -168,5 +168,211 @@
                     "CREDITS": 8
                }
           }
+     },
+     "MCA_NEW": {
+          "SEMESTER 1": {
+               "MCS-211": {
+                    "SUBJECT_NAME": " Design and Analysis of Algorithms",
+                    "CREDITS": 4
+               },
+               "MCS-212": {
+                    "SUBJECT_NAME": "Discrete Mathematics",
+                    "CREDITS": 4
+               },
+               "MCS-213": {
+                    "SUBJECT_NAME": "Software Engineering",
+                    "CREDITS": 4
+               },
+               "MCS-214": {
+                    "SUBJECT_NAME": "Professional Skills and Ethics",
+                    "CREDITS": 2
+               },
+               "MCS-215": {
+                    "SUBJECT_NAME": "Security and Cyber Laws",
+                    "CREDITS": 2
+               },
+               "MCS-216": {
+                    "SUBJECT_NAME": "DAA and Web Design Lab",
+                    "CREDITS": 2
+               },
+              "MCS-217": {
+                    "SUBJECT_NAME":" Software Engineering Lab",
+                    "CREDITS": 2
+               }
+          },
+          "SEMESTER 2": {
+             "MCS-218": {
+                    "SUBJECT_NAME":"Data Communication and Computer Networks",
+                    "CREDITS": 4
+               },
+              "MCS-219": {
+                    "SUBJECT_NAME": " Object Oriented Analysis and Design",
+                    "CREDITS": 4
+               },
+               "MCS-220": {
+                    "SUBJECT_NAME":"Web Technologies",
+                    "CREDITS": 4
+               },
+               "MCS-221": {
+                    "SUBJECT_NAME":"Data Warehousing and Data Minings",
+                    "CREDITS": 4
+               },
+               "MCS-222": {
+                    "SUBJECT_NAME":"OOAD and Web Technologies Lab",
+                    "CREDITS": 2
+               },
+               "MCS-223": {
+                    "SUBJECT_NAME":"Computer Networks and Data Mining Lab",
+                    "CREDITS": 2
+               }
+          },
+          "SEMESTER 3": {
+              "MCS-224": {
+                    "SUBJECT_NAME":"Artificial Intelligence and Machine Learning",
+                    "CREDITS": 4
+               },
+              "MCS-225": {
+                    "SUBJECT_NAME":"Accountancy and Financial Management ",
+                    "CREDITS": 4
+               },
+               "MCS-226": {
+                    "SUBJECT_NAME": " Data Science and Big Data",
+                    "CREDITS": 4
+               },
+               "MCS-227": {
+                    "SUBJECT_NAME": "Cloud Computing and IoT ",
+                    "CREDITS": 4
+               },
+               "MCS-228": {
+                    "SUBJECT_NAME":"AI and Machine Learning Lab",
+                    "CREDITS": 2
+               },
+               "MCS-229": {
+                    "SUBJECT_NAME": " Cloud and Data Science Lab ",
+                    "CREDITS": 2
+               }
+          },
+          "SEMESTER 4": {
+              "MCS-230": {
+                    "SUBJECT_NAME":"Digital Image Processing and Computer Vision",
+                    "CREDITS": 4
+               },
+              "MCS-231": {
+                    "SUBJECT_NAME":"Mobile Computing ",
+                    "CREDITS": 4
+               },
+               "MCS-232": {
+                    "SUBJECT_NAME": "Project (MCA_New)",
+                    "CREDITS": 12
+               }
+          }
+     },
+     "MCA_OLD":{
+          "SEMESTER 1": {
+               "MCS-011": {
+                     "SUBJECT_NAME":"Problem Solving and Programming",
+                     "CREDITS": 3
+                },
+               "MCS-012": {
+                     "SUBJECT_NAME":"Computer Organisation and Assembly Language Programming",
+                     "CREDITS": 4
+                },
+                "MCS-013": {
+                     "SUBJECT_NAME": "Discrete Mathematics",
+                     "CREDITS": 2
+                },
+                "MCS-014": {
+                    "SUBJECT_NAME": "System Analysis and Design",
+                    "CREDITS": 3
+               },
+               "MCS-015": {
+                    "SUBJECT_NAME": "Communication skills",
+                    "CREDITS": 2
+               },
+               "MCS-016": {
+                    "SUBJECT_NAME": "Internet Concepts and Web design(Lab Course)",
+                    "CREDITS": 2
+               },
+               "MCS-017": {
+                    "SUBJECT_NAME": "Lab(C and Assembly Language Programming)(Lab Course)",
+                    "CREDITS": 2
+               }
+           },
+           "SEMESTER 2":{
+                "MCS-021":{
+                     "SUBJECT_NAME":"Data and File Structures",
+                      "CREDITS":4
+                },
+                "MCS-022":{
+                    "SUBJECT_NAME":"Operating System concepts",
+                     "CREDITS":4
+               },
+               "MCS-023":{
+                    "SUBJECT_NAME":"Introduction to Database Management Syatems",
+                     "CREDITS":3
+               },
+               "MCS-024":{
+                    "SUBJECT_NAME":"Object Oriented Technology and java Programming",
+                     "CREDITS":3
+               },
+               "MCS-025":{
+                    "SUBJECT_NAME":"Lab(Data Structures using C,WINDOWS 2000,LINUX/UNIX,Java and MS? ACCESS, My SQL)",
+                     "CREDITS":4
+               }  
+           },
+           "SEMESTER 4":{
+                "MCS-041":{
+                     "SUBJECT_NAME":"Operating System",
+                     "CREDITS":4
+                },
+                "MCS-042":{
+                    "SUBJECT_NAME":"Data Communication and Networks",
+                    "CREDITS":4
+               },
+               "MCS-043":{
+                    "SUBJECT_NAME":"Advanced Database Management Systems",
+                    "CREDITS":4
+               },
+               "MCS-044":{
+                    "SUBJECT_NAME":"Mini Project",
+                    "CREDITS":4
+               },
+               "MCS-045":{
+                    "SUBJECT_NAME":"UNIX and DBMS LAB",
+                    "CREDITS":2
+               }
+           },
+           "SEMESTER 5":{
+               "MCS-051":{
+                    "SUBJECT_NAME":"Advanced Internet Technologies",
+                    "CREDITS":3
+               },
+               "MCS-053":{
+                   "SUBJECT_NAME":"Computer Graphics and Multimedia",
+                   "CREDITS":4
+              },
+              "MCS-054":{
+                   "SUBJECT_NAME":"Laboratory Course(Avanced Internet Technologies & Computer Graphics and Multimedia)",
+                   "CREDITS":2
+              },
+              "MCS-003":{
+                   "SUBJECT_NAME":"Artificial Intelligence and Knowledge Management",
+                   "CREDITS":3
+              },
+              "MCS-004":{
+                   "SUBJECT_NAME":"Numerical and Statistical Computing",
+                   "CREDITS":3
+              },
+              "MCS-011":{
+                   "SUBJECT_NAME":"Parallel Computing",
+                   "CREDITS":3
+              }
+          },
+          "SEMESTER 6":{
+               "MCS-060":{
+                    "SUBJECT_NAME":"Project",
+                    "CREDITS":16
+               }
+          }          
      }
 }
