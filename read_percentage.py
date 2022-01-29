@@ -61,7 +61,7 @@ class IgnouPercentage:
             self.driver.back()
             self.driver.close()
             #calculating the results and grade based on the extracted data
-            self.__calculateResult()
+            self.__calculateResult(program)
         
         return [self.__data_frame,self.__extracted_frame,self.__student_details]
     
@@ -119,10 +119,10 @@ class IgnouPercentage:
         ]
          
     #calculate percentage and status of each course
-    def __calculateResult(self):
+    def __calculateResult(self,program):
         COURSES = json.load(open("course_dictionary.json"))
         # BCA COURSE RESULT EVALUATION
-        for key,val in COURSES["BCA"].items():
+        for key,val in COURSES[program].items():
             dct = {}
             for k,v in val.items():
                 try:
