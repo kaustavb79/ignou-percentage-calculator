@@ -1,12 +1,12 @@
-# ignou-percentage-calculator
- This app is used to calculate the culmulative percentage of IGNOU students pursuing BCA/MCA
+# __IGNOU Percentage Calculator__
+ This app is used to calculate the __culmulative__ as well as __semester-wise__ percentage of IGNOU students pursuing BCA/MCA(Revised).
  
-
-# Requirements
+# __Local Machine Installation__
+## Requirements
  - Python 3.7 or above
  - Sepcify the __default_browser__ , __os__ type and the __system architecture__ in the __config.json__ file.
 
-# Installation
+## Installation
 - Create a virtual environment in Python using __pipenv__ or __virtualenv__.
 - Activate the virtual environment.
 - Install the requirements from the __requirements.txt__ file. Run the command below:
